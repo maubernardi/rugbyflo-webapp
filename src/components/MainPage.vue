@@ -4,9 +4,9 @@
     <h2>Gestione APP</h2>
     <ul>
       <li>
-        <a href="https://vuejs.org" target="_blank">
+        <router-link to="/upfile">
           Caricamento file
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -14,10 +14,16 @@
 
 <script>
 export default {
-  name: 'Rugby Florentia 4App',
+  name: 'main-page',
   data () {
     return {
       msg: 'Rugby Florentia - App Manager'
+    }
+  }, 
+  methods: {
+    onClick: function() {
+      alert('Cliccato Link');
+      router.push("Uploadfile");
     }
   }
 }
