@@ -10,7 +10,7 @@ export default new Router({
     {
       path: '/',
       name: 'main-page',
-      component: HelloWorld
+      component: MainPage
     },
     {
       path: '/upfile',
